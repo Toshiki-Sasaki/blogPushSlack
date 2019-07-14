@@ -4,7 +4,7 @@ RSSのないブログの更新をGASを使ってSlackに通知する
 
 # 使い方
 ## 事前準備
-1. Slackの設定
+### 1. Slackの設定
 
 - 新たにチャンネルを作成
 ![pre1-1](https://user-images.githubusercontent.com/23024426/61186254-2bb77e00-a69e-11e9-9a5b-95d381cc39ca.png)
@@ -23,7 +23,7 @@ RSSのないブログの更新をGASを使ってSlackに通知する
 ![pre1-6](https://user-images.githubusercontent.com/23024426/61186348-07a86c80-a69f-11e9-9887-8ae87f66c347.png)
 
 
-2. Google スプレッドシートを作成
+### 2. Google スプレッドシートを作成
 - Googleスプレッドシートを作成、"メンバー", "最新ブログ"というシート(スプレッドシートの左下のやつ)を作成
 - メンバーのシートにブログ更新を取得したい人の「名前(表示名)・リンク・ペンライトカラー(HEX)」を記入
 - リンクは以下のようなリンク（最後の番号だけ異なる）
@@ -35,14 +35,14 @@ URL https://docs.google.com/spreadsheets/d/<spreadsheet-id>/edit の `<spreadshe
 
 
 ## ブログ更新を自動取得する
-1. Google Apps Script(GAS) を新規に作成する。
+### 1. Google Apps Script(GAS) を新規に作成する。
 自身のGoogleDriveから新規作成 → その他 → Google Apps Script を選択。
 ![main-1](https://user-images.githubusercontent.com/23024426/61186230-d4b1a900-a69d-11e9-9f59-15a40139dfe8.png)
 
-2. コードをコピーして貼り付け。
+### 2. コードをコピーして貼り付け。
 `main.js`のコードをコピーし、GASに貼り付け。
 
-3. GAS でプロパティを設定する。
+### 3. GAS でプロパティを設定する。
 - GASのファイル → プロジェクトのプロパティ → スクリプトのプロパティを選択
 - +行を追加 → 以下の2つを設定
   - 名前:SLACK_INCOMING_URL、値:`Webhook URL`
