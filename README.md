@@ -46,7 +46,7 @@ URL https://docs.google.com/spreadsheets/d/<spreadsheet-id>/edit の `<spreadshe
 - GASのファイル → プロジェクトのプロパティ → スクリプトのプロパティを選択
 - +行を追加 → 以下の2つを設定
   - 名前:SLACK_INCOMING_URL、値:`Webhook URL`
-  - 名前:SHEET_ID、値:`<spreadsheet-id>
+  - 名前:SHEET_ID、値:`<spreadsheet-id>`
 - 保存を押す
 
 
